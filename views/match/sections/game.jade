@@ -1,5 +1,5 @@
 div(ng-controller='GameController', ng-show='token')
-  include alerts
+  include ../../../../../views/layouts/alerts
   var(ng-init='model= #{JSON.stringify(model)}')
   div(ng-if="!model")
     include ../modals/icons
