@@ -37,3 +37,4 @@ addMenu('challenges');
 addMenu('history');
 
 persist(challenges, db.challenges);
+countLevels();
