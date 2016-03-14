@@ -1,14 +1,17 @@
-# Plugin-Match
-The Match Game previously created in 2013 and ported to a pluging.
+# Plugin: Match
+Match The Game. Created on 2013, now as a plugin for monoapps 'core'.
 
-## Add this package as github module
+## github module
+Execute next command: 
+
 ````sh
 git submodule add git@github.com:MoNoApps/match.git plugins/match
 ````
 
 ## Migrations
-Migrations must be runned only once time.
+Migrations must be runned only one time.
+
 ````sh
 node plugins/posts/migrations/seed.js
-````sh
+````
 
