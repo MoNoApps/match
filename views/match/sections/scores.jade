@@ -1,0 +1,19 @@
+.row.pre-scrollable
+  table.table.text-center
+    thead
+      tr
+        th(colspan='3') User Scores
+    tbody
+      tr(ng-repeat="s in scores | orderBy: '-gems'")
+        td
+          i.fa.fa-server &nbsp; {{s.name}}
+        td
+          i.fa.fa-envelope &nbsp; {{s.email}}
+        td
+          i.fa.fa-line-chart &nbsp; {{s.level}}
+        td
+          i.fa.fa-diamond &nbsp; {{s.gems || 0}}
+    tfoot(ng-show='!scores.length')
+      tr
+        td
+          span.text-center There is not score to show

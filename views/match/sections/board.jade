@@ -1,0 +1,6 @@
+.row(ng-if='time!=0')
+  .col-md-12(ng-show='!$parent.isPaused')
+    .col-md-3.col-sm-3.col-xs-3.box-item(ng-repeat='i in board track by $index')
+      .btn.btn-default.item-icon(ng-bind='i.c', ng-click='attempt($index)',
+        ng-class="{'btn-warning': i.s == 'selected', 'btn-success': i.s == 'done', '': i.s == ''}")
+br

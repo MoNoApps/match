@@ -1,0 +1,27 @@
+form.form-horizontal(name='modelForm')
+  fieldset
+    .form-group
+      label.col-md-2.control-label Challenge
+      .col-md-10
+        input.form-control(ng-model='$parent.edit.challenge', type='text', required='true')
+    .form-group
+      label.col-md-2.control-label Level
+      .col-md-10
+        input.form-control(ng-model='$parent.edit.level', type='text', required='true')
+    .form-group
+      label.col-md-2.control-label User
+      .col-md-10
+        input.form-control(ng-model='$parent.edit.user', type='text', required='true')
+    .form-group
+      label.col-md-2.control-label Time
+      .col-md-10
+        input.form-control(ng-model='$parent.edit.time', type='text', required='true')
+    .form-group
+      label.col-md-2.control-label Date
+      .col-md-10
+        input.form-control(ng-model='$parent.edit.date', type='text', required='true')
+    .form-group
+      label.col-md-2.control-label Gems
+      .col-md-10
+        input.form-control(ng-model='$parent.edit.gems', type='text', required='true')
+    include actions

@@ -1,0 +1,16 @@
+div(ng-controller='GameController', ng-show='token')
+  include alerts
+  var(ng-init='model= #{JSON.stringify(model)}')
+  div(ng-if="!model")
+    include ../modals/icons
+    include breadcrumb
+    div(ng-show='chapter=="game"')
+      include stats
+      include challenges
+      include board
+    div(ng-show='chapter=="activity"')
+      include activity
+    div(ng-show='chapter=="scores"')
+      include scores
+    div(ng-show='chapter=="done"')
+      include done

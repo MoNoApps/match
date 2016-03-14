@@ -1,0 +1,24 @@
+.row.pre-scrollable
+  table.table.text-center
+    thead
+      tr
+        th(colspan='4') My Activity
+    tbody
+      tr(ng-repeat='a in activity | orderBy: "-number"')
+        td.info
+          i.fa.fa-server &nbsp;
+            span(ng-bind='a.name || 0')
+        td.success
+          i.fa.fa-bars &nbsp;
+            span(ng-bind='a.number || 0')
+        td.info
+          i.fa.fa-clock-o &nbsp;
+            span(ng-bind='(a.real/1000) || 0')
+        td.info
+          i.fa.fa-diamond &nbsp;
+            span(ng-bind='a.gems || 0')
+
+    tfoot(ng-show='!activity.length')
+      tr
+        td
+          span.text-center You have no activity to show

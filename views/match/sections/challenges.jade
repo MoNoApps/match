@@ -1,0 +1,22 @@
+.row.pre-scrollable(ng-show='isPaused')
+  table.table.text-center
+    thead
+      tr
+        th(colspan='4') Public Challenges
+    tbody
+      tr(ng-repeat='e in challenges')
+        td.td-zero.success
+          div(ng-hide='e == challenge')
+            a.btn-play.btn-table.btn.btn-success(ng-click='setChallenge(e)')
+              i.fa.fa-check
+        td(ng-class='{"info": (e!=challenge), "success": (e==challenge)}')
+          i.fa.fa-server &nbsp;{{e.name}}
+        th(ng-class='{"info": (e!=challenge), "success": (e==challenge)}')
+          span(ng-bind='e.desc')
+        td.success
+          i.fa.fa-users &nbsp;{{e.users || 0}}
+        td.td-zero.success
+          div(ng-show='e.start')
+            a.btn-play.btn-table.btn.btn-success(ng-click='revealIcons(e)',
+              data-toggle="modal", data-target="#iconsModal")
+              i.fa.fa-eye &nbsp;{{e.length || 0}}

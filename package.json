@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "match",
+  "version": "1.0.0",
+  "description": "The Match Game - Plugin",
+  "main": "plugin.js",
+  "keywords": [
+    "game"
+  ],
+  "author": "Daniel Martinez",
+  "license": "MIT"
+}

@@ -1,0 +1,100 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.auto-cursor {
+  cursor: auto !important;
+}
+.no-decor {
+  text-decoration: initial !important;
+}
+.ellipse {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.td-zero {
+  padding: 0 !important;
+}
+.box-item {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.btn-table{
+  padding: 8px !important;
+  border: 0px !important;
+}
+.icon-sample{
+  font-size: 40px;
+}
+.icon-list{
+  height: 100px;
+  overflow-y: scroll;
+}
+@media only screen and (min-height: 700px) and (min-width: 320px) {
+  #footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (min-width : 190px) {
+  .item-icon {
+    width: 100%;
+    font-size: 40px !important;
+  }
+  .btn-play {
+    width: 40px !important;
+  }
+}
+@media only screen and (min-width : 320px) {
+  .item-icon {
+    width: 100%;
+    font-size: 50px !important;
+  }
+  .btn-play {
+    width: 60px !important;
+  }
+}
+@media only screen and (min-width : 480px) {
+  .item-icon {
+    width: 100%;
+    font-size: 70px !important;
+  }
+  .btn-play {
+    width: 80px !important;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .item-icon {
+    width: 100%;
+    font-size: 90px !important;
+  }
+  .btn-play {
+    width: 80px !important;
+  }
+}
+@media only screen and (min-width : 992px) {
+  .item-icon {
+    width: 100%;
+    font-size: 60px !important;
+  }
+  .btn-play {
+    width: 80px !important;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .item-icon {
+    width: 100%;
+    font-size: 80px !important;
+  }
+  .btn-play {
+    width: 80px !important;
+  }
+}

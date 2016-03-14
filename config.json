@@ -1,0 +1,59 @@
+{
+  "dburl": "mongodb://127.0.0.1/match",
+  "pages":[
+    "match"
+  ],
+  "resources": {
+    "levels": {
+      "admin": true,
+      "param": "level",
+      "schema": {
+         "range": 1,
+         "number": 1,
+         "board": 1
+       }
+    },
+    "challenges": {
+       "admin": true,
+       "param": "challenge",
+       "exclude": true,
+       "schema": {
+         "name": 1
+       }
+    },
+    "history": {
+       "admin": true,
+       "param": "history",
+       "exclude": true,
+       "schema": {
+         "challenge": 1,
+         "level": 1,
+         "user": 1,
+         "time": 1,
+         "date": 1,
+         "gems": 1
+       }
+    },
+    "metrics": {
+      "admin": true,
+      "param": "history",
+      "exclude": true,
+       "schema": {
+         "challenge": 1,
+         "user": 1,
+         "gems": 1
+       }
+    },
+    "completed": {
+      "admin": true,
+      "param": "history",
+      "exclude": true,
+       "schema": {
+         "challenge": 1,
+         "user": 1,
+         "date": 1,
+         "email": 1
+       }
+    }
+  }
+}

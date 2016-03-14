@@ -1,0 +1,16 @@
+form.form-horizontal(name='modelForm')
+  fieldset
+    .form-group
+      label.col-md-2.control-label Range
+      .col-md-10
+        input.form-control(ng-model='$parent.edit.range', type='text', required='true')
+    .form-group
+      label.col-md-2.control-label Number
+      .col-md-10
+        input.form-control(ng-model='$parent.edit.number', type='number', required='true')
+    .form-group
+      label.col-md-2.control-label Board
+      .col-md-10
+        pre {{$parent.edit.board}}
+
+    include actions

@@ -1,0 +1,18 @@
+.row.pre-scrollable
+  table.table.text-center
+    thead
+      tr
+        th(colspan='4') Completed Challenges
+    tbody
+      tr(ng-repeat='a in completed')
+        td.success
+          i.fa.fa-bars &nbsp;
+            span(ng-bind='a.name')
+        td.info
+          i.fa.fa-clock-o &nbsp;
+            span(ng-bind='a.date')
+
+    tfoot(ng-show='!completed.length')
+      tr
+        td
+          span.text-center You haven't complete challenges to show

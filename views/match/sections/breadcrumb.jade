@@ -1,0 +1,13 @@
+.row(ng-hide='status=="warning"')
+  a.btn.btn-primary.col-md-3.col-sm-3.col-xs-3(
+    ng-class='{"active": chapter=="game"}',
+    ng-click='setChapter("game")') Game
+  a.btn.btn-primary.col-md-3.col-sm-3.col-xs-3(
+    ng-class='{"active": chapter=="activity"}',
+    ng-click='setChapter("activity")') Activity
+  a.btn.btn-primary.col-md-3.col-sm-3.col-xs-3(
+    ng-class='{"active": chapter=="done"}',
+    ng-click='setChapter("done")') Done
+  a.btn.btn-primary.col-md-3.col-sm-3.col-xs-3(
+    ng-class='{"active": chapter=="scores"}',
+    ng-click='setChapter("scores")') Scores

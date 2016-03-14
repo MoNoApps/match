@@ -1,0 +1,6 @@
+{
+  "c": {"name": "C", "desc": "Circular", "start": 10034, "end": 10058, "icons": 25},
+  "a": {"name": "A", "desc": "Arrows", "start": 8592, "end": 8682, "icons": 91},
+  "m": {"name": "M", "desc": "Miscellaneous", "start": 13312, "end": 13711, "icons": 400},
+  "t": {"name": "T", "desc": "Typography", "start": 9728, "end": 9840, "icons": 113}
+}

@@ -1,0 +1,25 @@
+.row(ng-if='challenge')
+  table.table.text-center
+    thead(ng-hide='status=="warning"')
+      tr
+        th(colspan='4') Current Challenge
+    tbody
+      tr
+        td.info
+          i.fa.fa-server &nbsp;
+            span(ng-bind='challenge.name')
+        td.success
+          i.fa.fa-line-chart &nbsp;
+            span &nbsp; {{level}} /{{challenge.length}}
+        td(ng-class='status')
+          i.fa.fa-clock-o &nbsp;
+            span(ng-bind='time')
+        td.td-zero.success(ng-if='status=="active"')
+          a.btn-play.btn-table.btn.btn-success(ng-click='act("play")')
+            i.fa.fa-play
+        td.td-zero.warming(ng-if='status=="warning"')
+          a.btn-play.btn-table.btn.btn-warning(ng-click='act("pause")')
+            i.fa.fa-pause
+        td.td-zero.active(ng-if='status=="danger"')
+          a.btn-play.btn-table.btn.btn-warning(ng-click='act("play")')
+            i.fa.fa-circle-o-notch
