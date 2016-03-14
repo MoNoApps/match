@@ -12,6 +12,6 @@ git submodule add git@github.com:MoNoApps/match.git plugins/match
 Migrations must be runned only one time.
 
 ````sh
-node plugins/posts/migrations/seed.js
+node plugins/match/migrations/seed.js
 ````
 
